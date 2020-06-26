@@ -26,12 +26,10 @@ class QuotesWindowPresenter(QDialog):
         self.update_table()
 
     def on_addButton_click(self):
-
         self.add = AddWindow(self)
         self.add .show()
 
     def on_editButton_click(self):
-
         selected_rows = self.tableWidget.selectionModel().selectedRows()
         if not selected_rows:
             self.msg.setText("You didn't select a single line!")
@@ -44,7 +42,6 @@ class QuotesWindowPresenter(QDialog):
             self.edit.show()
 
     def on_deleteButton_click(self):
-
         selected_rows = self.tableWidget.selectionModel().selectedRows()
         if not selected_rows:
             self.msg.setText("You didn't select a single line!")

@@ -62,10 +62,8 @@ class AddWindow(QDialog):
         self.cancelButton.setObjectName("cancelButton")
         self.gridLayout.addWidget(self.cancelButton, 0, 1, 1, 1)
         self.gridLayout_2.addWidget(self.frame, 1, 0, 1, 1)
-
         self.retranslateUi()
         QtCore.QMetaObject.connectSlotsByName(self)
-
         self.okButton.clicked.connect(self.on_okButton_click)
         self.cancelButton.clicked.connect(self.on_cancelButton_click)
 
